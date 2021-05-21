@@ -7,7 +7,7 @@ The aim of this project is to show how to deliver quality assurance in a softw
 * Code-review checklist
 
 # Sprint Backlog & Task Estimatinon
-### Sprint Backlog
+## Sprint Backlog
 | Task        | Point Estimation      | Priority  |Status   | Responsible   |
 | :---        |    :----:   |         :---: |:---        |    :----:   | 
 | Create POJOs.   | 1        | 1    | Completed   | Kiishi Ifebajo   |
@@ -46,7 +46,7 @@ Bigger more complex tasks get more points and smaller tasks get fewer points. Fo
 
 <br />
 
-### Velocity
+## Velocity
 The primary metric in Scrum is velocity, which is an indicator of how much work a team can do in a single Sprint. Velocity is determined by adding the points for all completed User Stories at the end of the Sprint. The total number of user stories committed during a sprint should not exceed the average velocity of the past sprints.
 The Team's main feedback mechanism is Velocity. It allows them to see if the improvements they make to their processes are helping or affecting their efficiency. Although the Scrum Team's velocity can fluctuate from Sprint to Sprint, a well-functioning Scrum Team's velocity should gradualy increase by about 10% each Sprint over time. A decrease in average velocity is usually a sign that some part of the team's development process has become inefficient and should be brought up at the next retrospective.
 
