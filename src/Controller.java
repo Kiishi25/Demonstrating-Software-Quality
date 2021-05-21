@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -10,22 +12,20 @@ public class Controller {
     //List of All Rubrics
 	List<Rubric> rubricList = new ArrayList<Rubric>();
 	
-	
+	//Empty Constructor
 	public Controller() {
 		
 	}
   
-
+   //Create rubrics
     public Rubric createRubric(String title, List<String> criterion, List<Grades>grades) {
-		
-		
 		Rubric rubric = new Rubric(title, grades, criterion);
 		rubricList.add(rubric);
 		return rubric;
 		
 	}
 
-    //Returns List of Rubrics Created 
+    //List of Rubrics Created 
 	public List<Rubric> getAllRubrics() {
 		return rubricList;
 	}
@@ -64,9 +64,6 @@ public class Controller {
 	
 
   
- 
-
-
     // Add Criterion to Rubric
 	public ArrayList<String> addCriterionToRubric(String criterion, Rubric rubric) {
 
@@ -77,21 +74,42 @@ public class Controller {
 		return criterionLis;
 	}
 
-//minimum and maximum score of a rubric
-public int minimumScoreRubric(Rubric rubric) {
-    List<Grades> grades=rubric.getGrades();
-		int min=6;
-		for(Grades grade:grades) {
-			HashMap<String, Integer> marks=grade.getScore();
-			for(int i:marks.values()) {
-				if(i<min) {
-					min=i;
-				}
-			}
-		}
-		return min;
-	}
-	
+
+//CALCULATES MAXIMIUM OF ALL SCORES IN RUBRIC
+public int calculateTotalMax(Rubric rubric) {
+    ArrayList<Integer> results = new ArrayList<>();
+    for(Grades grade :rubric.getGrades()) {
+        results.addAll((Collection<? extends Integer>) grade);
+    }
+   
+    return Collections.max(results);
+}
+
+//CALCULATES Minimum OF ALL SCORES IN RUBRIC
+public int calculateTotalMin(Rubric rubric) {
+    ArrayList<Integer> results = new ArrayList<>();
+    for(Grades grade :rubric.getGrades()) {
+        results.addAll((Collection<? extends Integer>) grade);
+    }
+   
+    return Collections.min(results);
+}
+
+public double calculateStandardDeviation(Rubric rubrics){
+    ArrayList<Integer> results = new ArrayList<>();
+    for(Grades grade :rubrics.getGrades()) {
+        results.addAll((Collection<? extends Integer>) grade);
+    }
+        double standardDeviation = 0.0;
+        int sum = results.stream().mapToInt(Integer::intValue).sum();
+        double mean = sum / results.size();
+        for (double num : results) {
+            standardDeviation += Math.pow(num - mean, 2);
+        }
+        System.out.println("Standard deviation: " + standardDeviation / results.size());
+        return Math.sqrt(standardDeviation / results.size());
+    }
+
 //method check if student grade is empty
 public static boolean checkEmptyStudentGrade(ArrayList<Grades> g1) {
 
@@ -104,6 +122,7 @@ public static boolean checkEmptyStudentGrade(ArrayList<Grades> g1) {
 
         return true;
     }
+
 
 }
 
