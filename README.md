@@ -71,12 +71,12 @@ It can also be visualized as the slope in a classic burndown chart.
 </p>
 
 ###  Test-driven Development
-est Driven Development (TDD) is software development approach in which test cases are developed to specify and validate what the code will do. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and making code simple and bug-free. For example of a Method & it's corresponding test in the software: 
+Test Driven Development (TDD) is software development approach in which test cases are developed to specify and validate what the code will do. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and making code simple and bug-free. For example of a Method & it's corresponding test in the software: 
 
 
-###  Test Covering Metric
+##  Test Covering Metric
 
-###  Code Review
+##  Code Review
 
 The primary purpose of code review is to make sure that the overall code health of Google’s code base is improving over time. All of the tools and processes of code review are designed to this end. There are code review tools and software, but the concept itself is important to understand. Code reviews should integrate with a team’s existing process.
 
