@@ -78,7 +78,7 @@ Test Driven Development (TDD) is software development approach in which test cas
 
 
 ##  Gitflow WorkFlow for Team Version Control
-
+GitFlow is a cloning framework that helps you decide which branches to create and how they should be combined. By splitting the sprint tasks into separate branches, I was able to use this workflow. Rather than making only one branch, I split it into two: a main branch and a develop branch. Each function branch is then split off from develop and integrated back into develop once the task is completed.
 
 ##  Code Review
 
