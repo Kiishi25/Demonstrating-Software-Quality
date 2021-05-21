@@ -1,44 +1,62 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Rubric {
-    private String studentName;
-    private ArrayList<Criteria> criteria = new ArrayList<>();
+  
+	String topicName;
+	List<Grades>grades = new ArrayList<>();
+	List<String> criterion = new ArrayList<String>();
+	
+	
+	//Empty Constructor
+	public Rubric() {
+		super();
+		
+	}
 
-    public Rubric(){
-        
-    }
+	public Rubric(String topicName, List<Grades> grades, List<String> criterion) {
+		super();
+		this.topicName = topicName;
+		this.grades = grades;
+		this.criterion = criterion;
+	}
 
-
-    
-    public Rubric(String studentName, ArrayList<Criteria> criteria) {
-        this.studentName = studentName;
-        this.criteria = criteria;
-    }
-    
-    
-    public String getStudentName() {
-        return studentName;
-    }
-
-
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
-
-
-    public ArrayList<Criteria> getCriteria() {
-        return criteria;
-    }
+	//Getters & Setters
+	public String getTopicName() {
+		return topicName;
+	}
 
 
-    public void setCriteria(ArrayList<Criteria> criteria) {
-        this.criteria = criteria;
-    }
+	public void setTopicName(String topicName) {
+		this.topicName = topicName;
+	}
 
+
+	public List<Grades> getGrades() {
+		return grades;
+	}
+
+
+	public void setGrades(List<Grades> grades) {
+		this.grades = grades;
+	}
+
+
+	public List<String> getCriterion() {
+		return criterion;
+	}
+
+
+	public void setCriterion(List<String> criterion) {
+		this.criterion = criterion;
+	}
+	
+
+    @Override
     public String toString() {
         return "Rubric{" +
-                "studentName=" + studentName +
-                ", criteria=" + criteria + 
+                "topicName='" + topicName + '\'' +
+                ", criteria=" + criterion  +
                 '}';
     }
 }
