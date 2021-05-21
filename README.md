@@ -52,7 +52,7 @@ The Team's main feedback mechanism is Velocity. It allows them to see if the imp
 
 The steps involved in Velocity-based Sprint Planning are as follows:
 
-1. Calculate the team’s average velocity (from last 3 Sprints)
+1. Calculate the team average velocity (from last 3 Sprints)
 2. Select the items from the product backlog equal to the average velocity
 3. Verify whether the tasks associated with the selected user stories are appropriate for the particular sprint
 4. Estimate the tasks and check if the total work is consistent with past sprints
