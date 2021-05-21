@@ -1,2 +1,19 @@
 # Demonstrating-Software-Quality
-You are going to create a software component for storing information about student grades. Each topic that a student is graded on has a Rubric. A Rubric is made up of multiple Criteria (up to a maximum of 10). When a student is graded they are awarded a score for each Criterion in the Rubric, which is an integer value between 1 and 5
+The aim of this project is to show how to deliver quality assurance in a software project. This README.md file can only be used as a guide line by the team when enforcing best quality practices on the project. The following items will be demonstrated in the document:
+* Scrum sprint backlog and task estimation
+* Unit testing and Test-Driven development
+* Test coverage metric
+* Team version-control 
+* Code-review checklist
+
+# Sprint Backlog & Task Estimatinon
+| Task        | Point Estimation      | Responsible    |Priority    | Status      | Owner     |
+| :---        |    :----:   |         :---: |:---        |    :----:   |          ---: |
+| Create POJOs   | 1        | Kiishi Ifebajo     |
+| Create Controller class    | 1        | Kiishi Ifebajo    |
+| Investigate and configure test coverage tools   | 2     | Kiishi Ifebajo    |
+|Create method for creating new rubrics. | 2        | Kiishi Ifebajo     |
+| Implement methods for calculations   | 2        | Kiishi Ifebajo      |
+
+<br />
+
