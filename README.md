@@ -71,8 +71,7 @@ It can also be visualized as the slope in a classic burndown chart.
 </p>
 
 ###  Unit testing and Test-Driven development
-Test Driven Development (TDD) is software development approach in which test cases are developed to specify and validate what the code will do. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and making code simple and bug-free. For example of a Method & it's corresponding test in the software: 
-
+Test Driven Development (TDD) is software development approach in which test cases are developed to specify and validate what the code will do. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and making code simple and bug-free. For example: testGetAllStudentGrades. The test passes if all names are found. **Link**  https://github.com/Kiishi25/Demonstrating-Software-Quality/pull/3/commits/73711f7fc520903e63162d63f0e9de5ec76cde06
 <p align="left">
   <img src="http://19yw4b240vb03ws8qm25h366-wpengine.netdna-ssl.com/wp-content/uploads/Test-driven-development-cycle-Cybus-Nordic-APIs.png"
         alt="Test Driven" width="500"/>
