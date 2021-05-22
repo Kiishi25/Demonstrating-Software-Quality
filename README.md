@@ -81,8 +81,10 @@ Test Driven Development (TDD) is software development approach in which test cas
 
 Test coverage is a measure used to describe the degree to which the source code of a program is executed when a particular test suite runs. A program with high test coverage, measured as a percentage, has had more of its source code executed during testing, which suggests it has a lower chance of containing undetected software bugs compared to a program with low test coverage. Many different metrics can be used to calculate test coverage; 
 
-Green -> Lines of code are covered by a unit test
-Red -> Lines of code are not covered by a unit test
+* Red -> Lines of code are not covered by a unit test
+
+* Green -> Lines of code are covered by a unit test
+
 
 ##  Gitflow WorkFlow for Team Version Control
 GitFlow is a cloning framework that helps you decide which branches to create and how they should be combined. By splitting the sprint tasks into separate branches, I was able to use this workflow. Rather than making only one branch, I split it into two: a main branch and a develop branch. Each function branch is then split off from develop and integrated back into develop once the task is completed.
@@ -116,7 +118,7 @@ Code review is as important for tests as it is for the code that is tested. This
 6. **Scalability**
 Consider scalability by imagining what might happen to the code you’re reviewing if it were put under unexpected load. What happens to your homepage if it goes viral and is hit with dozens of requests per second? What happens if a user with thousands of activities in your app decides to view their full activity log? 
 
-7. Documentation
+7. **Documentation**
 Check whether the code you’re reviewing requires extra documentation to go along with it. If it’s a new project, this means ensuring it has an adequate readme that explains why the project exists and how to use it.
 **Link to my Commit**
 https://github.com/Kiishi25/Demonstrating-Software-Quality/pull/1
