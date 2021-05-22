@@ -15,7 +15,7 @@ public class POJOTest {
                 student.getName().equals("Kiishi Ifebajo");
     }
 
-        @Test
+        @Test 
         public void testRubric() {
             
         }
